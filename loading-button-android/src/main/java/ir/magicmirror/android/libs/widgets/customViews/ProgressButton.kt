@@ -65,6 +65,14 @@ interface ProgressButton : Drawable.Callback, LifecycleObserver {
         startAnimation { }
     }
 
+    fun showProgress(startAnimationCallback: () -> Unit = {}){
+        startAnimation(startAnimationCallback)
+    }
+
+    fun hideProgress(onAnimationEndListener: () -> Unit = {}){
+        revertAnimation(onAnimationEndListener)
+    }
+
     fun startMorphAnimation()
     fun startMorphRevertAnimation()
     fun stopMorphAnimation()
