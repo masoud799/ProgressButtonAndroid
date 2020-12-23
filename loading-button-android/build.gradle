@@ -5,7 +5,7 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'org.jmailen.kotlinter'
 
 // Bintray depends on this global variable to set the library version!
-version = "1.0.3"
+version = "1.0.4"
 group = 'ir.magicmirror.android.libs.widgets.button'
 
 android {
@@ -20,7 +20,7 @@ android {
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 30
-        versionCode 2
+        versionCode 3
         versionName version
     }
     buildTypes {

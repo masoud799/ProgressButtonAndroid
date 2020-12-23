@@ -34,6 +34,8 @@ interface ProgressButton : Drawable.Callback, LifecycleObserver {
     var initialCorner: Float
     var finalCorner: Float
 
+    var showProgress: Boolean
+
     val finalWidth: Int
     val finalHeight: Int
 
@@ -65,11 +67,11 @@ interface ProgressButton : Drawable.Callback, LifecycleObserver {
         startAnimation { }
     }
 
-    fun showProgress(startAnimationCallback: () -> Unit = {}){
+    fun showProgress(startAnimationCallback: () -> Unit = {}) {
         startAnimation(startAnimationCallback)
     }
 
-    fun hideProgress(onAnimationEndListener: () -> Unit = {}){
+    fun hideProgress(onAnimationEndListener: () -> Unit = {}) {
         revertAnimation(onAnimationEndListener)
     }
 
@@ -134,6 +136,8 @@ internal fun ProgressButton.init(attrs: AttributeSet? = null, defStyleAttr: Int 
 internal fun ProgressButton.config(tArray: TypedArray) {
     initialCorner = tArray.getDimension(R.styleable.CircularProgressButton_initialCornerAngle, 0f)
     finalCorner = tArray.getDimension(R.styleable.CircularProgressButton_finalCornerAngle, 100f)
+
+    showProgress = tArray.getBoolean(R.styleable.CircularProgressButton_showProgress, false)
 
     spinningBarWidth = tArray.getDimension(R.styleable.CircularProgressButton_spinning_bar_width, 10f)
     spinningBarColor = tArray.getColor(R.styleable.CircularProgressButton_spinning_bar_color, spinningBarColor)

@@ -37,7 +37,13 @@ class CircularProgressButton : MaterialButton, ProgressButton {
     override var spinningBarWidth = 10F
     override var spinningBarColor = ContextCompat.getColor(context, android.R.color.black)
 
+
     override var finalCorner = 0F
+    override var showProgress: Boolean = false
+        set(value) {
+            if (value) startAnimation() else revertAnimation()
+            field = value
+        }
     override var initialCorner = 0F
 
     private lateinit var initialState: InitialState
@@ -66,9 +72,9 @@ class CircularProgressButton : MaterialButton, ProgressButton {
     private val morphAnimator by lazy {
         AnimatorSet().apply {
             playTogether(
-                cornerAnimator(drawableBackground, initialCorner, finalCorner),
-                widthAnimator(this@CircularProgressButton, initialState.initialWidth, finalWidth),
-                heightAnimator(this@CircularProgressButton, initialHeight, finalHeight)
+                    cornerAnimator(drawableBackground, initialCorner, finalCorner),
+                    widthAnimator(this@CircularProgressButton, initialState.initialWidth, finalWidth),
+                    heightAnimator(this@CircularProgressButton, initialHeight, finalHeight)
             )
 
             addListener(morphListener(presenter::morphStart, presenter::morphEnd))
@@ -78,9 +84,9 @@ class CircularProgressButton : MaterialButton, ProgressButton {
     private val morphRevertAnimator by lazy {
         AnimatorSet().apply {
             playTogether(
-                cornerAnimator(drawableBackground, finalCorner, initialCorner),
-                widthAnimator(this@CircularProgressButton, finalWidth, initialState.initialWidth),
-                heightAnimator(this@CircularProgressButton, finalHeight, initialHeight)
+                    cornerAnimator(drawableBackground, finalCorner, initialCorner),
+                    widthAnimator(this@CircularProgressButton, finalWidth, initialState.initialWidth),
+                    heightAnimator(this@CircularProgressButton, finalHeight, initialHeight)
             )
 
             addListener(morphListener(presenter::morphRevertStart, presenter::morphRevertEnd))
@@ -102,10 +108,10 @@ class CircularProgressButton : MaterialButton, ProgressButton {
     override fun recoverInitialState() {
         text = initialState.initialText
         setCompoundDrawables(
-            initialState.compoundDrawables[0],
-            initialState.compoundDrawables[1],
-            initialState.compoundDrawables[2],
-            initialState.compoundDrawables[3]
+                initialState.compoundDrawables[0],
+                initialState.compoundDrawables[1],
+                initialState.compoundDrawables[2],
+                initialState.compoundDrawables[3]
         )
     }
 
@@ -184,13 +190,13 @@ class CircularProgressButton : MaterialButton, ProgressButton {
             progressAnimatedDrawable.progress = value
         } else {
             throw IllegalStateException("Set progress in being called in the wrong state: ${presenter.state}." +
-                " Allowed states: ${State.PROGRESS}, ${State.MORPHING}, ${State.WAITING_PROGRESS}")
+                    " Allowed states: ${State.PROGRESS}, ${State.MORPHING}, ${State.WAITING_PROGRESS}")
         }
     }
 
     data class InitialState(
-        var initialWidth: Int,
-        val initialText: CharSequence,
-        val compoundDrawables: Array<Drawable>
+            var initialWidth: Int,
+            val initialText: CharSequence,
+            val compoundDrawables: Array<Drawable>
     )
 }

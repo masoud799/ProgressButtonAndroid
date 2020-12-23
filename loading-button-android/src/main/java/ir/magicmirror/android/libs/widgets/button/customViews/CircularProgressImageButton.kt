@@ -38,6 +38,11 @@ class CircularProgressImageButton : AppCompatImageButton, ProgressButton {
     override var spinningBarColor = ContextCompat.getColor(context, android.R.color.black)
 
     override var finalCorner = 0F
+    override var showProgress: Boolean = false
+        set(value) {
+            if (value) startAnimation() else revertAnimation()
+            field = value
+        }
     override var initialCorner = 0F
 
     private lateinit var initialState: InitialState

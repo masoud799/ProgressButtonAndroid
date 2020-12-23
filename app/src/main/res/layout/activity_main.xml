@@ -100,7 +100,8 @@
             app:initialCornerAngle="50dp"
             app:spinning_bar_color="#FFFFFFFF"
             app:spinning_bar_padding="5dp"
-            app:spinning_bar_width="5dp" />
+            app:spinning_bar_width="5dp"
+            app:showProgress="true"/>
 
         <TextView
             android:layout_width="match_parent"
