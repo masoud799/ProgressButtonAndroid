@@ -11,7 +11,7 @@ import androidx.test.espresso.matcher.ViewMatchers.isEnabled
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import androidx.test.rule.ActivityTestRule
-import ir.magicmirror.android.libs.widgets.customViews.CircularProgressButton
+import ir.magicmirror.android.libs.widgets.button.customViews.CircularProgressButton
 import ir.magicmirror.android.loadingbuttonsample.MainActivity
 import ir.magicmirror.android.loadingbuttonsample.R
 import org.hamcrest.Matchers.not

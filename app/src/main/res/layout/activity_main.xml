@@ -22,7 +22,7 @@
             android:padding="8dp"
             android:text="Test 0" />
 
-        <ir.magicmirror.android.libs.widgets.customViews.CircularProgressButton
+        <ir.magicmirror.android.libs.widgets.button.customViews.CircularProgressButton
             android:id="@+id/imgBtnTest0"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="match_parent"
@@ -44,7 +44,7 @@
             android:padding="8dp"
             android:text="Test 1 - Morph, loading, done and revert" />
 
-        <ir.magicmirror.android.libs.widgets.customViews.CircularProgressImageButton
+        <ir.magicmirror.android.libs.widgets.button.customViews.CircularProgressImageButton
             android:id="@+id/imgBtnTest1"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -61,7 +61,7 @@
             app:spinning_bar_padding="0dp"
             app:spinning_bar_width="3dp" />
 
-        <ir.magicmirror.android.libs.widgets.customViews.CircularProgressButton
+        <ir.magicmirror.android.libs.widgets.button.customViews.CircularProgressButton
             android:id="@+id/buttonTest1"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -85,7 +85,7 @@
             android:padding="8dp"
             android:text="Test 2 - Morph, loading and revert" />
 
-        <ir.magicmirror.android.libs.widgets.customViews.CircularProgressButton
+        <ir.magicmirror.android.libs.widgets.button.customViews.CircularProgressButton
             android:id="@+id/buttonTest2"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -108,7 +108,7 @@
             android:padding="8dp"
             android:text="Test 3 - Morph, loading and revert very fast " />
 
-        <ir.magicmirror.android.libs.widgets.customViews.CircularProgressButton
+        <ir.magicmirror.android.libs.widgets.button.customViews.CircularProgressButton
             android:id="@+id/buttonTest3"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -131,7 +131,7 @@
             android:padding="8dp"
             android:text="Test 4 - Morph, loading, done and revert. Done very fast " />
 
-        <ir.magicmirror.android.libs.widgets.customViews.CircularProgressButton
+        <ir.magicmirror.android.libs.widgets.button.customViews.CircularProgressButton
             android:id="@+id/buttonTest4"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -154,7 +154,7 @@
             android:padding="8dp"
             android:text="Test 5 - Morph, loading, done and revert. Done and revert very fast " />
 
-        <ir.magicmirror.android.libs.widgets.customViews.CircularProgressButton
+        <ir.magicmirror.android.libs.widgets.button.customViews.CircularProgressButton
             android:id="@+id/buttonTest5"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -177,7 +177,7 @@
             android:padding="8dp"
             android:text="Test 6 - Set Progress " />
 
-        <ir.magicmirror.android.libs.widgets.customViews.CircularProgressButton
+        <ir.magicmirror.android.libs.widgets.button.customViews.CircularProgressButton
             android:id="@+id/buttonTest6"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -200,7 +200,7 @@
             android:padding="8dp"
             android:text="Test 7 - Start Animation, then Stop" />
 
-        <ir.magicmirror.android.libs.widgets.customViews.CircularProgressButton
+        <ir.magicmirror.android.libs.widgets.button.customViews.CircularProgressButton
             android:id="@+id/buttonTest7"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -223,7 +223,7 @@
             android:padding="8dp"
             android:text="Test 8 - Start Animation, then Stop fast" />
 
-        <ir.magicmirror.android.libs.widgets.customViews.CircularProgressButton
+        <ir.magicmirror.android.libs.widgets.button.customViews.CircularProgressButton
             android:id="@+id/buttonTest8"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -246,7 +246,7 @@
             android:padding="8dp"
             android:text="Test 9 - Start Animation with listener, then Revert with listener" />
 
-        <ir.magicmirror.android.libs.widgets.customViews.CircularProgressButton
+        <ir.magicmirror.android.libs.widgets.button.customViews.CircularProgressButton
             android:id="@+id/buttonTest9"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -269,7 +269,7 @@
             android:padding="8dp"
             android:text="Test 10 - Use any background(like RippleDrawable) and styles(like material button) like Ripple" />
 
-        <ir.magicmirror.android.libs.widgets.customViews.CircularProgressButton
+        <ir.magicmirror.android.libs.widgets.button.customViews.CircularProgressButton
             android:id="@+id/buttonTest10"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="match_parent"

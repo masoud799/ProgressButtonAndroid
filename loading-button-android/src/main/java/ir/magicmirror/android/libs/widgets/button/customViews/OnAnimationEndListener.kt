@@ -1,4 +1,4 @@
-package ir.magicmirror.android.libs.widgets.customViews
+package ir.magicmirror.android.libs.widgets.button.customViews
 
 fun interface OnAnimationEndListener {
     fun onAnimationEnd()

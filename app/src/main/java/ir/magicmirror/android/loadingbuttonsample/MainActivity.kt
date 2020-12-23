@@ -10,8 +10,8 @@ import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import ir.magicmirror.android.libs.widgets.animatedDrawables.ProgressType
-import ir.magicmirror.android.libs.widgets.customViews.ProgressButton
+import ir.magicmirror.android.libs.widgets.button.animatedDrawables.ProgressType
+import ir.magicmirror.android.libs.widgets.button.customViews.ProgressButton
 import kotlinx.android.synthetic.main.activity_main.*
 import android.widget.Toast
 

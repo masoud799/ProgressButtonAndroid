@@ -1,4 +1,4 @@
-package ir.magicmirror.android.libs.widgets.animatedDrawables
+package ir.magicmirror.android.libs.widgets.button.animatedDrawables
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
@@ -14,8 +14,8 @@ import android.graphics.drawable.Animatable
 import android.graphics.drawable.Drawable
 import android.view.animation.AccelerateDecelerateInterpolator
 import android.view.animation.LinearInterpolator
-import ir.magicmirror.android.libs.widgets.customViews.ProgressButton
-import ir.magicmirror.android.libs.widgets.disposeAnimator
+import ir.magicmirror.android.libs.widgets.button.customViews.ProgressButton
+import ir.magicmirror.android.libs.widgets.button.disposeAnimator
 
 const val MIN_PROGRESS = 0F
 const val MAX_PROGRESS = 100F

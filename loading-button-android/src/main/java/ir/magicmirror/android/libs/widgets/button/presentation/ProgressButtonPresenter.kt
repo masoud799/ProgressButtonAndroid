@@ -1,10 +1,10 @@
-package ir.magicmirror.android.libs.widgets.presentation
+package ir.magicmirror.android.libs.widgets.button.presentation
 
 import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.os.Handler
 import android.os.Looper
-import ir.magicmirror.android.libs.widgets.customViews.ProgressButton
+import ir.magicmirror.android.libs.widgets.button.customViews.ProgressButton
 
 enum class State {
     BEFORE_DRAW,

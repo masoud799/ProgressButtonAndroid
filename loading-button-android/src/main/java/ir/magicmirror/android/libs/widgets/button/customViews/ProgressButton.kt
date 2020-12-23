@@ -1,4 +1,4 @@
-package ir.magicmirror.android.libs.widgets.customViews
+package ir.magicmirror.android.libs.widgets.button.customViews
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
@@ -16,15 +16,15 @@ import android.util.AttributeSet
 import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.LifecycleObserver
-import ir.magicmirror.android.libs.widgets.R
-import ir.magicmirror.android.libs.widgets.animatedDrawables.CircularProgressAnimatedDrawable
-import ir.magicmirror.android.libs.widgets.animatedDrawables.CircularRevealAnimatedDrawable
-import ir.magicmirror.android.libs.widgets.animatedDrawables.ProgressType
-import ir.magicmirror.android.libs.widgets.presentation.State
-import ir.magicmirror.android.libs.widgets.updateHeight
-import ir.magicmirror.android.libs.widgets.updateWidth
-import ir.magicmirror.android.libs.widgets.utils.addLifecycleObserver
-import ir.magicmirror.android.libs.widgets.utils.parseGradientDrawable
+import ir.magicmirror.android.libs.widgets.button.R
+import ir.magicmirror.android.libs.widgets.button.animatedDrawables.CircularProgressAnimatedDrawable
+import ir.magicmirror.android.libs.widgets.button.animatedDrawables.CircularRevealAnimatedDrawable
+import ir.magicmirror.android.libs.widgets.button.animatedDrawables.ProgressType
+import ir.magicmirror.android.libs.widgets.button.presentation.State
+import ir.magicmirror.android.libs.widgets.button.updateHeight
+import ir.magicmirror.android.libs.widgets.button.updateWidth
+import ir.magicmirror.android.libs.widgets.button.utils.addLifecycleObserver
+import ir.magicmirror.android.libs.widgets.button.utils.parseGradientDrawable
 
 interface ProgressButton : Drawable.Callback, LifecycleObserver {
     var paddingProgress: Float

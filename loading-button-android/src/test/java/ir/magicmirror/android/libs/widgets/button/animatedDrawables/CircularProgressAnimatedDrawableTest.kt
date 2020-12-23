@@ -1,4 +1,4 @@
-package ir.magicmirror.android.libs.widgets.animatedDrawables
+package ir.magicmirror.android.libs.widgets.button.animatedDrawables
 
 import com.nhaarman.mockitokotlin2.mock
 import org.junit.Assert.assertEquals

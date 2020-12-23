@@ -1,4 +1,4 @@
-package ir.magicmirror.android.libs.widgets.customViews
+package ir.magicmirror.android.libs.widgets.button.customViews
 
 import android.animation.AnimatorSet
 import android.content.Context
@@ -11,12 +11,12 @@ import androidx.appcompat.widget.AppCompatImageButton
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.OnLifecycleEvent
-import ir.magicmirror.android.libs.widgets.animatedDrawables.CircularProgressAnimatedDrawable
-import ir.magicmirror.android.libs.widgets.animatedDrawables.CircularRevealAnimatedDrawable
-import ir.magicmirror.android.libs.widgets.animatedDrawables.ProgressType
-import ir.magicmirror.android.libs.widgets.disposeAnimator
-import ir.magicmirror.android.libs.widgets.presentation.ProgressButtonPresenter
-import ir.magicmirror.android.libs.widgets.presentation.State
+import ir.magicmirror.android.libs.widgets.button.animatedDrawables.CircularProgressAnimatedDrawable
+import ir.magicmirror.android.libs.widgets.button.animatedDrawables.CircularRevealAnimatedDrawable
+import ir.magicmirror.android.libs.widgets.button.animatedDrawables.ProgressType
+import ir.magicmirror.android.libs.widgets.button.disposeAnimator
+import ir.magicmirror.android.libs.widgets.button.presentation.ProgressButtonPresenter
+import ir.magicmirror.android.libs.widgets.button.presentation.State
 
 class CircularProgressImageButton : AppCompatImageButton, ProgressButton {
 

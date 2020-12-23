@@ -1,4 +1,4 @@
-package ir.magicmirror.android.libs.widgets.utils
+package ir.magicmirror.android.libs.widgets.button.utils
 
 import android.content.Context
 import android.graphics.drawable.ColorDrawable

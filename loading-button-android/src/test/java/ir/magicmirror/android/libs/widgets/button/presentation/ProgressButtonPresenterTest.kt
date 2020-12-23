@@ -1,8 +1,8 @@
-package ir.magicmirror.android.libs.widgets.presentation
+package ir.magicmirror.android.libs.widgets.button.presentation
 
 import android.graphics.Bitmap
 import android.graphics.Canvas
-import ir.magicmirror.android.libs.widgets.customViews.ProgressButton
+import ir.magicmirror.android.libs.widgets.button.customViews.ProgressButton
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.never

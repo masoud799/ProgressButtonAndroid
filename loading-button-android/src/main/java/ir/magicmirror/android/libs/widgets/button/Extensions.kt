@@ -1,4 +1,4 @@
-package ir.magicmirror.android.libs.widgets
+package ir.magicmirror.android.libs.widgets.button
 
 import android.animation.Animator
 import android.view.View

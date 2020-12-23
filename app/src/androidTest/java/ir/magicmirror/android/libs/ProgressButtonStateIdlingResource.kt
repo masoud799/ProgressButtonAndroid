@@ -1,8 +1,8 @@
 package ir.magicmirror.android.libs
 
 import androidx.test.espresso.IdlingResource
-import ir.magicmirror.android.libs.widgets.customViews.ProgressButton
-import ir.magicmirror.android.libs.widgets.presentation.State
+import ir.magicmirror.android.libs.widgets.button.customViews.ProgressButton
+import ir.magicmirror.android.libs.widgets.button.presentation.State
 
 class ProgressButtonStateIdlingResource(private val progressButton: ProgressButton, private val expectedState: State = State.IDLE) : IdlingResource {
 

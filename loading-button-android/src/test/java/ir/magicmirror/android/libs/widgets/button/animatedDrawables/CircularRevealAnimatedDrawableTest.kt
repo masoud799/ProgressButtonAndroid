@@ -1,4 +1,4 @@
-package ir.magicmirror.android.libs.widgets.animatedDrawables
+package ir.magicmirror.android.libs.widgets.button.animatedDrawables
 
 import android.content.Context
 import android.graphics.BitmapFactory
